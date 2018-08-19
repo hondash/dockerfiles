@@ -8,4 +8,4 @@ RUN apk add --update --virtual .build-deps \
     && sudo gem sources --clear-all \
     && apk del .build-deps \
     && rm -rf /var/cache/apk/* /home/fluent/.gem/ruby/2.4.0/cache/*.gem \
-    && mkdir -p /var/log/fluent && chown fluent:fluent /var/log/fluent
+    && mkdir -p /var/log/fluent && chmod 777 /var/log/fluent
