@@ -30,7 +30,7 @@ services:
     environment:
       TZ: Asia/Tokyo
     depends_on:
-      - fluentd-gcp
+      - fluentd-gce
     logging:
       driver: json-file
       options: *logging-options
