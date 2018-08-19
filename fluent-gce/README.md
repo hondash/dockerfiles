@@ -3,13 +3,14 @@
 A sample of docker containers(Rails + Nginx + CloudSQL + Fluentd) on Container-Optimized OS.
 
 
-## Notes
+## Usage
 
 Clone repository & Move files to home directory.
 
 ```
 $ git clone https://github.com/hondash/dockerfiles.git
 $ mv dockerfiles/fluent-gce/* ~/ && rm -rf dockerfiles
+$ $ docker build -t fluent-gce:latest fluent/
 ```
 
 Add `.env` file to home directory
