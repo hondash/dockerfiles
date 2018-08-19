@@ -1,0 +1,22 @@
+source "https://rubygems.org"
+
+# 任意のtagに書き換えるプラグイン
+gem "fluent-plugin-rewrite-tag-filter", "< 2.0.0"
+
+# イベントレコードのフィールドを追加/置換するプラグイン
+gem "fluent-plugin-record-reformer"
+
+# systemd journalからのログを読み取るプラグイン
+gem "fluent-plugin-systemd"
+
+# GCPにログを送るためのプラグイン
+gem "fluent-plugin-google-cloud"
+
+# 例外のスタックを1つのログエントリに統合するプラグイン
+gem "fluent-plugin-detect-exceptions"
+
+# Prometheus から fluentd にメトリクスを取得しにいくプラグイン（for Kubernetes）
+#gem "fluent-plugin-prometheus"
+
+# 1つのログファイル内に複数フォーマットがある場合に対応するプラグイン
+gem "fluent-plugin-multi-format-parser"
