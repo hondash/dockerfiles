@@ -10,7 +10,7 @@ Clone repository & Move files to home directory.
 ```
 $ git clone https://github.com/hondash/dockerfiles.git
 $ mv dockerfiles/fluent-gce/* ~/ && rm -rf dockerfiles
-$ $ docker build -t fluent-gce:latest fluent/
+$ docker build -t fluent-gce:latest fluent/
 ```
 
 Add `.env` file to home directory
